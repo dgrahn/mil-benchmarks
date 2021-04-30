@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import pkg_resources
 import tensorflow as tf
 
 from pathlib import Path
@@ -12,7 +13,7 @@ def load_dataset(source, pad, onehot, prefix):
     )
 
 def load_mil(x_orig, pad, onehot, csv):
-    base = Path(__file__).parent.absolute()
+    base = Path(pkg_resources.resource_string(__file__, 'csvs'))
     df = pd.read_csv(base.joinpath('csvs').joinpath(csv))
 
     if pad:
