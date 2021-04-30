@@ -35,33 +35,33 @@ available through a python module.
 | Absence    | cifar10 | `absence.cifar10.load_89`           | 8 and 9 are absent  |
 | Complex    | fashion | `complex.fashion.load_basic_outfit` | See details below   |
 | Complex    | fashion | `complex.fashion.load_multi_outfit` | See details below   |
-| Presence   | mnist   | `presence.mnist.load_01`            | 0 and 1 are present |
-| Presence   | mnist   | `presence.mnist.load_12`            | 1 and 2 are present |
-| Presence   | mnist   | `presence.mnist.load_23`            | 2 and 3 are present |
-| Presence   | mnist   | `presence.mnist.load_34`            | 3 and 4 are present |
-| Presence   | mnist   | `presence.mnist.load_45`            | 4 and 5 are present |
-| Presence   | mnist   | `presence.mnist.load_56`            | 5 and 6 are present |
-| Presence   | mnist   | `presence.mnist.load_67`            | 6 and 7 are present |
-| Presence   | mnist   | `presence.mnist.load_78`            | 7 and 8 are present |
-| Presence   | mnist   | `presence.mnist.load_89`            | 8 and 9 are present |
-| Presence   | fashion | `presence.fashion.load_01`          | 0 and 1 are present |
-| Presence   | fashion | `presence.fashion.load_12`          | 1 and 2 are present |
-| Presence   | fashion | `presence.fashion.load_23`          | 2 and 3 are present |
-| Presence   | fashion | `presence.fashion.load_34`          | 3 and 4 are present |
-| Presence   | fashion | `presence.fashion.load_45`          | 4 and 5 are present |
-| Presence   | fashion | `presence.fashion.load_56`          | 5 and 6 are present |
-| Presence   | fashion | `presence.fashion.load_67`          | 6 and 7 are present |
-| Presence   | fashion | `presence.fashion.load_78`          | 7 and 8 are present |
-| Presence   | fashion | `presence.fashion.load_89`          | 8 and 9 are present |
-| Presence   | cifar10 | `presence.cifar10.load_01`          | 0 and 1 are present |
-| Presence   | cifar10 | `presence.cifar10.load_12`          | 1 and 2 are present |
-| Presence   | cifar10 | `presence.cifar10.load_23`          | 2 and 3 are present |
-| Presence   | cifar10 | `presence.cifar10.load_34`          | 3 and 4 are present |
-| Presence   | cifar10 | `presence.cifar10.load_45`          | 4 and 5 are present |
-| Presence   | cifar10 | `presence.cifar10.load_56`          | 5 and 6 are present |
-| Presence   | cifar10 | `presence.cifar10.load_67`          | 6 and 7 are present |
-| Presence   | cifar10 | `presence.cifar10.load_78`          | 7 and 8 are present |
-| Presence   | cifar10 | `presence.cifar10.load_89`          | 8 and 9 are present |
+| Presence   | mnist   | `presence.mnist.load_01`            | 0 or 1 are present  |
+| Presence   | mnist   | `presence.mnist.load_12`            | 1 or 2 are present  |
+| Presence   | mnist   | `presence.mnist.load_23`            | 2 or 3 are present  |
+| Presence   | mnist   | `presence.mnist.load_34`            | 3 or 4 are present  |
+| Presence   | mnist   | `presence.mnist.load_45`            | 4 or 5 are present  |
+| Presence   | mnist   | `presence.mnist.load_56`            | 5 or 6 are present  |
+| Presence   | mnist   | `presence.mnist.load_67`            | 6 or 7 are present  |
+| Presence   | mnist   | `presence.mnist.load_78`            | 7 or 8 are present  |
+| Presence   | mnist   | `presence.mnist.load_89`            | 8 or 9 are present  |
+| Presence   | fashion | `presence.fashion.load_01`          | 0 or 1 are present  |
+| Presence   | fashion | `presence.fashion.load_12`          | 1 or 2 are present  |
+| Presence   | fashion | `presence.fashion.load_23`          | 2 or 3 are present  |
+| Presence   | fashion | `presence.fashion.load_34`          | 3 or 4 are present  |
+| Presence   | fashion | `presence.fashion.load_45`          | 4 or 5 are present  |
+| Presence   | fashion | `presence.fashion.load_56`          | 5 or 6 are present  |
+| Presence   | fashion | `presence.fashion.load_67`          | 6 or 7 are present  |
+| Presence   | fashion | `presence.fashion.load_78`          | 7 or 8 are present  |
+| Presence   | fashion | `presence.fashion.load_89`          | 8 or 9 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_01`          | 0 or 1 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_12`          | 1 or 2 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_23`          | 2 or 3 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_34`          | 3 or 4 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_45`          | 4 or 5 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_56`          | 5 or 6 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_67`          | 6 or 7 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_78`          | 7 or 8 are present  |
+| Presence   | cifar10 | `presence.cifar10.load_89`          | 8 or 9 are present  |
 | Standard   | mnist   | `standard.mnist.load_0`             | 0 is present        |
 | Standard   | mnist   | `standard.mnist.load_1`             | 1 is present        |
 | Standard   | mnist   | `standard.mnist.load_2`             | 2 is present        |
