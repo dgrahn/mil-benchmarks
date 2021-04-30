@@ -4,22 +4,22 @@ from mil_benchmarks.utils import load_dataset
 class DatasetLoader:
     @classmethod
     def load_all(cls, pad=True, onehot=True):
-        return [
-            cls.load_0(pad=pad, onehot=onehot),
-            cls.load_1(pad=pad, onehot=onehot),
-            cls.load_2(pad=pad, onehot=onehot),
-            cls.load_3(pad=pad, onehot=onehot),
-            cls.load_4(pad=pad, onehot=onehot),
-            cls.load_5(pad=pad, onehot=onehot),
-            cls.load_6(pad=pad, onehot=onehot),
-            cls.load_7(pad=pad, onehot=onehot),
-            cls.load_8(pad=pad, onehot=onehot),
-            cls.load_9(pad=pad, onehot=onehot),
-        ]
+        return {
+            f'{cls.name:}-0': cls.load_0(pad=pad, onehot=onehot),
+            f'{cls.name:}-1': cls.load_1(pad=pad, onehot=onehot),
+            f'{cls.name:}-2': cls.load_2(pad=pad, onehot=onehot),
+            f'{cls.name:}-3': cls.load_3(pad=pad, onehot=onehot),
+            f'{cls.name:}-4': cls.load_4(pad=pad, onehot=onehot),
+            f'{cls.name:}-5': cls.load_5(pad=pad, onehot=onehot),
+            f'{cls.name:}-6': cls.load_6(pad=pad, onehot=onehot),
+            f'{cls.name:}-7': cls.load_7(pad=pad, onehot=onehot),
+            f'{cls.name:}-8': cls.load_8(pad=pad, onehot=onehot),
+            f'{cls.name:}-9': cls.load_9(pad=pad, onehot=onehot),
+        }
 
     @classmethod
     def load_data(cls, class_id, pad=True, onehot=True):
-        return load_dataset(cls.source, pad, onehot, f'standard/{cls.name}/{class_id}')
+        return load_dataset(cls.source, pad, onehot, f'standard.{cls.name}', f'{class_id}')
 
     @classmethod
     def load_0(cls, pad=True, onehot=True):

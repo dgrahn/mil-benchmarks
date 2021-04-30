@@ -5,8 +5,15 @@ class fashion:
     source = tf.keras.datasets.fashion_mnist
 
     @classmethod
+    def load_all(cls, pad=True, onehot=True):
+        return {
+            f'fasion-basic-outfit': cls.load_basic_outfit(pad=pad, onehot=onehot),
+            f'fasion-multi-outfit': cls.load_basic_outfit(pad=pad, onehot=onehot),
+        }
+
+    @classmethod
     def load_data(cls, name, pad=True, onehot=True):
-        return load_dataset(cls.source, pad, onehot, f'complex/fashion/{name}')
+        return load_dataset(cls.source, pad, onehot, f'complex.fashion', f'{name}')
     
     @classmethod
     def load_basic_outfit(cls, pad=True, onehot=True):
