@@ -1,16 +1,74 @@
 import tensorflow as tf
-from . import load_dataset
+from mil_benchmarks.utils import load_dataset
 
 class DatasetLoader:
     @classmethod
-    def load_data(cls, class_id, pad=True, onehot=True):
-        return load_dataset(cls.source, pad, onehot, f'{cls.prefix}/{class_id}')
+    def load_all(cls, pad=True, onehot=True):
+        return [
+            cls.load_0(pad=pad, onehot=onehot),
+            cls.load_1(pad=pad, onehot=onehot),
+            cls.load_2(pad=pad, onehot=onehot),
+            cls.load_3(pad=pad, onehot=onehot),
+            cls.load_4(pad=pad, onehot=onehot),
+            cls.load_5(pad=pad, onehot=onehot),
+            cls.load_6(pad=pad, onehot=onehot),
+            cls.load_7(pad=pad, onehot=onehot),
+            cls.load_8(pad=pad, onehot=onehot),
+            cls.load_9(pad=pad, onehot=onehot),
+        ]
 
-    @staticmethod
-    def load_0(pad=True, onehot=True):
-        return _parent.load_data(0, pad=pad, onehot=onehot)
+    @classmethod
+    def load_data(cls, class_id, pad=True, onehot=True):
+        return load_dataset(cls.source, pad, onehot, f'standard/{cls.name}/{class_id}')
+
+    @classmethod
+    def load_0(cls, pad=True, onehot=True):
+        return cls.load_data(0, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_1(cls, pad=True, onehot=True):
+        return cls.load_data(1, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_2(cls, pad=True, onehot=True):
+        return cls.load_data(2, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_3(cls, pad=True, onehot=True):
+        return cls.load_data(3, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_4(cls, pad=True, onehot=True):
+        return cls.load_data(4, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_5(cls, pad=True, onehot=True):
+        return cls.load_data(5, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_6(cls, pad=True, onehot=True):
+        return cls.load_data(6, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_7(cls, pad=True, onehot=True):
+        return cls.load_data(7, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_8(cls, pad=True, onehot=True):
+        return cls.load_data(8, pad=pad, onehot=onehot)
+
+    @classmethod
+    def load_9(cls, pad=True, onehot=True):
+        return cls.load_data(9, pad=pad, onehot=onehot)
 
 class mnist(DatasetLoader):
     source = tf.keras.datasets.mnist
-    prefix = 'standard/mnist'
+    name = 'mnist'
 
+class fashion(DatasetLoader):
+    source = tf.keras.datasets.fashion_mnist
+    name = 'fashion'
+
+class cifar10(DatasetLoader):
+    source = tf.keras.datasets.cifar10
+    name = 'cifar10'
