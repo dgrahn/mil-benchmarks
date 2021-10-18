@@ -1,7 +1,7 @@
 # MIL Benchmarks
 
 This repository contains a set of multiple-instance learning benchmarks
-available through a python module.
+available through a python module. More details are available on arXiv: https://arxiv.org/abs/2105.01443
 
 ## Benchmarks
 | Assumption | Source  | Function                            | Positive If         |
